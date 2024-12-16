@@ -1,0 +1,16 @@
+
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "al",
+      "request": "launch",
+      "name": "Publish",   
+      "environmentType": "Sandbox",
+      "environmentName": "Development_24-11-13",
+      "tenant": "64505c9c-ae96-4d1b-bbf5-8ecb76805001",
+      "schemaUpdateMode":"Synchronize"
+    }
+  ]
+}
+  

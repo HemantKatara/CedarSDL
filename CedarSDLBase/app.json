@@ -1,0 +1,41 @@
+{
+  "id": "7fff1a3b-d14d-4436-b18f-902966663a56",
+  "name": "Cedar_SDL",
+  "publisher": "Cedar Management",
+  "version": "1.0.0.17",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help":  "https://go.microsoft.com/fwlink/?linkid=2104024",
+  "url":  "https://go.microsoft.com/fwlink/?LinkId=724011",
+  "logo": "",
+  "dependencies": [
+    {
+      "id": "1b91fd24-b9af-43a5-8f24-49cd02db8a1a",
+      "publisher": "Simply Dynamics Ltd",
+      "version": "4.0.0.0",
+      "name": "SD Case Manager"
+    },
+    {
+      "id": "d496c448-fa17-43f6-b301-3cb46810daa5",
+      "publisher": "ASQiT Ltd.",
+      "version": "22.0.1.5",
+      "name": "Dispute and Bad Debt Management"
+    }
+      ],
+  "screenshots": [],
+  "platform": "19.0.0.0",
+  "application": "19.0.0.0",
+  "idRanges": [
+    {
+      "from": 50200,
+      "to": 50299
+    }
+  ],
+  "contextSensitiveHelpUrl": "https://docs.microsoft.com/en-us/dynamics365/business-central/",
+  "showMyCode": true,
+  "runtime": "8.0",
+  "target": "Cloud"
+  
+}
