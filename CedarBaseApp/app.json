@@ -1,0 +1,52 @@
+{
+  "id": "f934bbbe-83e7-4fa2-a017-2e4ece6b596c",
+  "name": "ALProject1",
+  "publisher": "Cedar Management",
+  "version": "1.0.0.195",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "https://go.microsoft.com/fwlink/?linkid=2104024",
+  "url": "https://go.microsoft.com/fwlink/?LinkId=724011",
+  "logo": "",
+  "dependencies": [
+    {
+      "id": "08d69832-9231-429e-be2c-8bab2c96905b",
+      "publisher": "Microsoft",
+      "version": "18.0.23013.23795",
+      "name": "Email - Current User Connector"
+    },
+    {
+      "id": "63ca2fa4-4f03-4f2b-a480-172fef340d3f",
+      "publisher": "Microsoft",
+      "version": "18.0.23013.23795",
+      "name": "System Application"
+    },
+    {
+      "id": "1b91fd24-b9af-43a5-8f24-49cd02db8a1a",
+      "publisher": "Simply Dynamics Ltd",
+      "version": "3.0.7.0",
+      "name": "SD Case Manager"
+    },
+    {
+      "id": "7fff1a3b-d14d-4436-b18f-902966663a56",
+      "publisher": "Cedar Management",
+      "version": "1.0.0.12",
+      "name": "Cedar_SDL"
+    }
+  ],
+  "screenshots": [],
+  "platform": "22.0.0.0",
+  "application": "22.0.0.0",
+  "idRanges": [
+    {
+      "from": 50000,
+      "to": 60000
+    }
+  ],
+  "contextSensitiveHelpUrl": "https://learn.microsoft.com/en-us/dynamics365/business-central/",
+  "resourceExposurePolicy": {},
+  "runtime": "11.0",
+  "target": "Cloud"
+}

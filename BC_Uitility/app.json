@@ -1,0 +1,35 @@
+
+{
+  "id": "c6a719cd-e636-45dc-a930-a4195f06d54b",
+  "name": "BC_Uitility",
+  "publisher": "SMDX",
+  "version": "1.0.0.3",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "https://go.microsoft.com/fwlink/?linkid=2104024",
+  "url": "https://go.microsoft.com/fwlink/?LinkId=724011",
+  "logo": "",
+  "dependencies": [
+    {
+      "id": "f934bbbe-83e7-4fa2-a017-2e4ece6b596c",
+      "name": "ALProject1",
+      "version": "1.0.0.179",
+      "publisher": "Cedar Management"
+    }
+  ],
+  "screenshots": [],
+  "platform": "22.0.0.0",
+  "application": "22.0.0.0",
+  "idRanges": [
+    {
+      "from": 50000,
+      "to": 60000
+    }
+  ],
+  "contextSensitiveHelpUrl": "https://learn.microsoft.com/en-us/dynamics365/business-central/",
+  "resourceExposurePolicy": {},
+  "runtime": "11.0",
+  "target": "Cloud"
+}
