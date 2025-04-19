@@ -7,7 +7,7 @@
       "request": "launch",
       "name": "Publish",   
       "environmentType": "Sandbox",
-      "environmentName": "Development_24-11-13",
+      "environmentName": "Development_25-01-27",
       "tenant": "64505c9c-ae96-4d1b-bbf5-8ecb76805001",
       "schemaUpdateMode":"Synchronize"
     }
