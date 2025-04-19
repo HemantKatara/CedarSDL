@@ -9,7 +9,7 @@ pageextension 50214 "SDYCsmCardExt" extends "SDY CSM Case Card"
                 ApplicationArea = all;
             }
         }
-        addafter(DueDateChanges)
+        addafter(CaseReportedMethodCode)
         {
             field("Salesperson Code"; Rec."Salesperson Code")
             {

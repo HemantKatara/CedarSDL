@@ -2,7 +2,7 @@
   "id": "7fff1a3b-d14d-4436-b18f-902966663a56",
   "name": "Cedar_SDL",
   "publisher": "Cedar Management",
-  "version": "1.0.0.17",
+  "version": "1.0.0.18",
   "brief": "",
   "description": "",
   "privacyStatement": "",
@@ -24,18 +24,18 @@
       "name": "Dispute and Bad Debt Management"
     }
       ],
-  "screenshots": [],
-  "platform": "19.0.0.0",
-  "application": "19.0.0.0",
+      "screenshots": [],
+      "platform": "22.0.0.0",
+      "application": "22.0.0.0",
   "idRanges": [
     {
       "from": 50200,
       "to": 50299
     }
   ],
-  "contextSensitiveHelpUrl": "https://docs.microsoft.com/en-us/dynamics365/business-central/",
-  "showMyCode": true,
-  "runtime": "8.0",
+  "contextSensitiveHelpUrl": "https://learn.microsoft.com/en-us/dynamics365/business-central/",
+  "resourceExposurePolicy": {},
+  "runtime": "11.0",
   "target": "Cloud"
   
 }
