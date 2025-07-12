@@ -1,0 +1,40 @@
+{
+  "id": "bad98f47-b38c-4747-84af-1aabba67a1e4",
+  "name": "Cedar Management G/L Entry Tag Utility",
+  "publisher": "Cedar Management",
+  "version": "1.0.0.2",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "https://go.microsoft.com/fwlink/?linkid=2104024",
+  "url": "https://go.microsoft.com/fwlink/?LinkId=724011",
+  "logo": "",
+  "dependencies": [
+       {
+      "id": "6d393309-3adb-42c5-8b0d-d436f5df2862",
+      "name": "Cedar Management Custom Fields",
+      "publisher": "Cedar Management",
+      "version": "0.0.0.1"
+     
+    }
+  ],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "25.0.0.0",
+  "idRanges": [
+    {
+      "from": 57100,
+      "to": 57150
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "14.0",
+  "features": [
+    "NoImplicitWith"
+  ]
+}
