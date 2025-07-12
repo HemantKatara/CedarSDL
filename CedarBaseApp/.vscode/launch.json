@@ -9,7 +9,7 @@
       "environmentType": "Sandbox",
       "environmentName": "Development_25-01-27",
       "tenant": "64505c9c-ae96-4d1b-bbf5-8ecb76805001",
-      "schemaUpdateMode":"Synchronize"
+      "schemaUpdateMode":"ForceSync"
     }
   ]
 }
