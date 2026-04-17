@@ -303,11 +303,13 @@ page 50220 "Posted Sales Invoices New"
 
         area(factboxes)
         {
-            part("Attached Documents"; "Document Attachment Factbox")
+            part("Attached Documents List"; "Doc. Attachment List Factbox")
             {
                 ApplicationArea = All;
-                Caption = 'Attachments';
-                SubPageLink = "Table ID" = CONST(112), "No." = FIELD("No.");
+                Caption = 'Documents';
+                UpdatePropagation = Both;
+                SubPageLink = "Table ID" = const(Database::"Sales Invoice Header"),
+                              "No." = field("No.");
             }
             part(IncomingDocAttachFactBox; "Incoming Doc. Attach. FactBox")
             {
