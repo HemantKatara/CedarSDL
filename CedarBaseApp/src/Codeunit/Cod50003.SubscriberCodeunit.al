@@ -497,9 +497,9 @@ codeunit 50003 "Subscriber Codeunit"
 
     end;
 
-
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::NoSeriesManagement, 'OnNoSeriesLineFilterOnBeforeFindLast', '', false, false)]
-    local procedure OnNoSeriesLineFilterOnBeforeFindLast(var NoSeriesLine: Record "No. Series Line")
+    //HK+++
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"No. Series", 'OnSetNoSeriesLineFilters', '', false, false)]
+    local procedure OnSetNoSeriesLineFilters(var NoSeriesLine: Record "No. Series Line");
     var
         UserSetup: Record "User Setup";
         DivCode: Code[20];
@@ -507,22 +507,27 @@ codeunit 50003 "Subscriber Codeunit"
         Clear(DivCode);
         UserSetup.Get(UserId);
         DivCode := UserSetup."Division Code";
-        if DivCode <> '' then
+        if DivCode <> '' then begin
             NoSeriesLine.SetRange("Division Code", DivCode);
-    end;
-
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::NoSeriesManagement, 'OnAfterGetNextNo3', '', false, false)]
-    local procedure OnAfterGetNextNo3(var NoSeriesLine: Record "No. Series Line"; ModifySeries: Boolean)
-    var
-        UserSetup: Record "User Setup";
-    begin
-        UserSetup.Get(UserId);
-        if UserSetup."Division Code" <> '' then begin
+            //HK+++
             UserSetup."Division Code" := '';
             UserSetup.Modify();
-        End;
+            //HK---
+        end;
     end;
 
+    // [EventSubscriber(ObjectType::Codeunit, Codeunit::NoSeriesManagement, 'OnAfterGetNextNo3', '', false, false)]
+    // local procedure OnAfterGetNextNo3(var NoSeriesLine: Record "No. Series Line"; ModifySeries: Boolean)
+    // var
+    //     UserSetup: Record "User Setup";
+    // begin
+    //     UserSetup.Get(UserId);
+    //     if UserSetup."Division Code" <> '' then begin
+    //         UserSetup."Division Code" := '';
+    //         UserSetup.Modify();
+    //     End;
+    // end;
+    //HK---
 
     procedure ItemLookUp(OldItemNo: Code[20]; var NewItemNo: Code[20]; GlobalDimCode: Code[20]; FromSalesDoc: Boolean; SourceNo: Code[20])
     var

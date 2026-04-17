@@ -43,7 +43,7 @@ pageextension 50016 "Posted Sales Shipments Ext" extends "Posted Sales Shipments
             //     end;
             // }
 
-            action(Email)
+            action("E-Mail")
             {
                 ApplicationArea = Basic, Suite;
                 Caption = '&Email';

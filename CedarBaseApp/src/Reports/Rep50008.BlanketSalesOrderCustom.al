@@ -991,7 +991,6 @@ report 50008 "Blanket Sales Order_Custom"
         Text008: Label 'Local Currency';
         Text009: Label 'Exchange rate: %1/%2';
         ArchiveDocument: Boolean;
-        [InDataSet]
         LogInteractionEnable: Boolean;
         PaymentTermsCaptionLbl: Label 'Payment Terms';
         ShipmentMethodCaptionLbl: Label 'Shipment Method';

@@ -975,7 +975,6 @@ report 50006 "Statement_Copy"
         AgingBandCurrencyCode: Code[20];
         Text013Txt: Label 'Due Date,Posting Date';
         Text014Txt: Label 'Application Writeoffs';
-        [InDataSet]
         LogInteractionEnable: Boolean;
         Text036Txt: Label '-%1', Comment = 'Negating the period length: %1 is the period length';
         StatementCaptionLbl: Label 'Statement';
@@ -1008,7 +1007,6 @@ report 50006 "Statement_Copy"
         SupportedOutputMethod: Option Print,Preview,PDF,Email,Excel,XML;
         ChosenOutputMethod: Integer;
         PrintIfEmailIsMissing: Boolean;
-        [InDataSet]
         ShowPrintIfEmailIsMissing: Boolean;
         FirstCustomerPrinted: Boolean;
         DivisionColor: Text[30];
