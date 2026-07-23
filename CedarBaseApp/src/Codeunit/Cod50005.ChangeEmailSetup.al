@@ -8,14 +8,20 @@ codeunit 50005 "ChangeEmailSetup"
         subject: Text;
         EmailSubjectPluralCapTxt: Label '%1', Comment = '%1 = Customer Name. ';
         EmailSubjectCapTxt: Label '%1 - %2', Comment = '%1 = Customer Name. %2 = Invoice No.';
+        SalesHeader: Record "Sales Header";
+        BlanketOrderEmailSubjectCapTxt: Label 'Order Confirmation - %1';
+
     begin
         IsHandled := true;
         if PostedDocNo = '' then begin
             Subject := CopyStr(
                 StrSubstNo(EmailSubjectPluralCapTxt, EmailDocumentName), 1, MaxStrLen(Subject))
         end else begin
-            Subject := CopyStr(
-                StrSubstNo(EmailSubjectCapTxt, EmailDocumentName, PostedDocNo), 1, MaxStrLen(Subject))
+            if SalesHeader.Get(SalesHeader."Document Type"::"Blanket Order", PostedDocNo) then
+                Subject := StrSubstNo(BlanketOrderEmailSubjectCapTxt, PostedDocNo)
+            else
+                Subject := CopyStr(
+                    StrSubstNo(EmailSubjectCapTxt, EmailDocumentName, PostedDocNo), 1, MaxStrLen(Subject));
         end;
         if IsHandled then
             EmailSubject := subject;
